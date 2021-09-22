@@ -19,7 +19,7 @@ function ListPicker({ finished, id }) {
   const [lucky, setLucky] = useState();
 
   useEffect(() => {
-    let elements = Array.apply(null, Array(32)).map(() => lorem.generateSentences(1));
+    let elements = Array.apply(null, Array(48)).map(() => lorem.generateSentences(1));
 
     setLucky(getRandomInt(32));
 
