@@ -6,8 +6,6 @@ RUN yarn global add serve
 
 RUN yarn
 
-RUN yarn exec browserslist@latest --update-db
-
 COPY . .
 
 RUN yarn run build
