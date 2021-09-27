@@ -1,6 +1,5 @@
 .App {
   display: flex;
-  background: lightblue;
   height: 100%;
   width: 100%;
   justify-content: space-evenly;
@@ -18,19 +17,4 @@ a {
 .list-picker {
   width: 75%;
 }
-
-.scoreboard {
-  width: 25%;
-  margin: 1em;
-  display: flex;
-  flex-direction: column;
-}
-
-.cell {
-  display: flex;
-  justify-content: space-between;
-  margin: 0.25em;
-}
-
-
 

@@ -2,15 +2,17 @@ FROM node:14.17-alpine
 
 COPY package*.json ./
 
-RUN npm install
+RUN yarn global add serve
+
+RUN yarn
+
+RUN yarn exec browserslist@latest --update-db
 
 COPY . .
 
-RUN npm run build
-
-RUN npm install -g serve
+RUN yarn run build
 
 EXPOSE 5000
 
-CMD ["npx", "serve", "-s", "./build"]
+CMD ["yarn", "exec", "serve", "-s", "./build"]
 
