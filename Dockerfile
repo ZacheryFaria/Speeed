@@ -1,4 +1,4 @@
-FROM node:14.17-buster
+FROM node:14.17-alpine
 
 COPY package*.json ./
 

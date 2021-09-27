@@ -19,3 +19,5 @@ echo "Logs for $container_name starting below" >> ./speedyboi.log
 sudo docker rm speedyboi || true
 
 sudo docker run -dp 5000:5000 --name speedyboi $container_name
+
+sudo docker system prune -y
