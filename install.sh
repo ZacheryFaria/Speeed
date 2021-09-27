@@ -1,6 +1,14 @@
 #!/bin/bash
 
+sudo -v
+
 git pull
+
+if [ $# -eq 0 ]
+  then
+    ./install.sh yes
+    exit
+fi
 
 hash=$(git rev-parse HEAD)
 
