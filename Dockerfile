@@ -12,5 +12,5 @@ RUN yarn run build
 
 EXPOSE 5000
 
-CMD ["yarn", "exec", "serve", "-s", "./build"]
+CMD ["serve", "-s", "/build"]
 
